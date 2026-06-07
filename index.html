@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RedWord</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RedWord</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <div class="container">
-        <h1>RedWord</h1>
+<div class="app">
 
-        <p>English + العربية</p>
+    <h1 class="logo">RedWord</h1>
 
-        <button id="startBtn">Start Game</button>
+    <p class="subtitle">
+        Crossword Game
+        <br>
+        لعبة الكلمات المتقاطعة
+    </p>
+
+    <div class="language-box">
+        <button class="lang-btn">🇬🇧 English</button>
+        <button class="lang-btn">🇸🇦 العربية</button>
     </div>
 
-    <script src="game.js"></script>
+    <button id="startBtn" class="play-btn">
+        Start Game
+    </button>
+
+</div>
+
+<script src="game.js"></script>
 
 </body>
 </html>

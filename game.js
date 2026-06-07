@@ -1,3 +1,3 @@
 document.getElementById("startBtn").addEventListener("click", () => {
-    alert("Welcome to RedWord!");
+    alert("RedWord v2 coming soon!");
 });
