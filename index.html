@@ -17,12 +17,12 @@
         Crossword Game
         <br>
         لعبة الكلمات المتقاطعة
-    </p>
+   <div class="language-box">
+    <button id="englishBtn" class="lang-btn">🇬🇧 English</button>
+    <button id="arabicBtn" class="lang-btn">🇸🇦 العربية</button>
+</div>
 
-    <div class="language-box">
-        <button class="lang-btn">🇬🇧 English</button>
-        <button class="lang-btn">🇸🇦 العربية</button>
-    </div>
+    
 
    <button id="startBtn" class="play-btn">
     Start Game
@@ -33,18 +33,20 @@
     <h2>Score : <span id="score">0</span></h2>
 
     <h3 id="hint">
-        Hint will appear here
-    </h3>
+    Hint will appear here
+</h3>
 
-    <input
-        type="text"
-        id="answerInput"
-        placeholder="Type your answer"
-    >
+<div id="grid"></div>
 
-    <button id="checkBtn" class="play-btn">
-        Check
-    </button>
+<input
+    type="text"
+    id="answerInput"
+    placeholder="Type your answer"
+>
+
+<button id="checkBtn" class="play-btn">
+    Check
+</button>
 
 </div>
 

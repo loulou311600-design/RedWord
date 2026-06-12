@@ -57,3 +57,34 @@ border-radius:15px;
 font-size:20px;
 cursor:pointer;
 }
+
+#hint{
+    margin-bottom:20px;
+}
+
+#answerInput{
+    margin-bottom:15px;
+    padding:10px;
+    font-size:16px;
+}
+
+#grid{
+    display:grid;
+    grid-template-columns:repeat(5,60px);
+    gap:5px;
+    justify-content:center;
+    margin:20px 0;
+}
+
+.cell{
+    width:60px;
+    height:60px;
+    background:white;
+    color:black;
+    border-radius:8px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:24px;
+    font-weight:bold;
+}
