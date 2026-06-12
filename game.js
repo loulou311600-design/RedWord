@@ -6,20 +6,34 @@ const answerInput = document.getElementById("answerInput");
 const checkBtn = document.getElementById("checkBtn");
 
 let score = 0;
+let currentWord = 0;
 
 const words = [
     {
         word: "APPLE",
         hint: "A popular fruit"
+    },
+    {
+        word: "HOUSE",
+        hint: "A place where people live"
+    },
+    {
+        word: "WATER",
+        hint: "You drink it every day"
     }
 ];
+
+function loadWord() {
+    hint.textContent = words[currentWord].hint;
+    answerInput.value = "";
+}
 
 startBtn.addEventListener("click", () => {
 
     startBtn.style.display = "none";
     gameArea.style.display = "block";
 
-    hint.textContent = words[0].hint;
+    loadWord();
 
 });
 
@@ -27,13 +41,24 @@ checkBtn.addEventListener("click", () => {
 
     const answer = answerInput.value.toUpperCase();
 
-    if (answer === words[0].word) {
+    if (answer === words[currentWord].word) {
 
         score += 10;
-
         scoreElement.textContent = score;
 
-        alert("Correct!");
+        currentWord++;
+
+        if (currentWord < words.length) {
+
+            loadWord();
+
+        } else {
+
+            hint.textContent = "Level Complete!";
+            answerInput.style.display = "none";
+            checkBtn.style.display = "none";
+
+        }
 
     } else {
 
